@@ -1,7 +1,11 @@
 
 function App() {
   return (
-    <h1>Rick & Morty App</h1>
+    <nav className="navbar navbar-dark bg-dark">
+      <div className="container">
+        <a className="navbar-brand text-uppercase" href="/">Rick & Morty App</a>
+      </div>
+    </nav>
   );
 }
 
