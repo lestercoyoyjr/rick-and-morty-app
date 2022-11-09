@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './Components/Navbar'
+import Characters from './Components/Characters';
 
 function App() {
 
