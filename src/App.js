@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './Components/Navbar'
+import Navbar from './Components/Pagination'
 import Characters from './Components/Characters';
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
 
   const fetchCharacters = (url) => {
     fetch(url)
-      .then(response => response.json())
-      .then(data => setCharacters(data.results))
-      .catch(error => console.log(error))
+      .then((response) => response.json())
+      .then((data) => setCharacters(data.results))
+      .catch((error) => console.log(error))
   };
 
   useEffect(() => {
