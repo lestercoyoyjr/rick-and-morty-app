@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './Components/Navbar'
-import Navbar from './Components/Pagination'
+import Pagination from './Components/Pagination'
 import Characters from './Components/Characters';
 
 function App() {

@@ -3,7 +3,7 @@ import React from 'react'
 const Pagination = () => {
     return (
         <nav>
-            <ul className='pagination'>
+            <ul className='pagination justify-content-center'>
                 <li className='page-item'>
                     <button className='page-link'>Previous</button>
                 </li>
