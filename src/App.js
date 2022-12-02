@@ -28,8 +28,8 @@ function App() {
     <>
       <Navbar brand="Rick and Morty App" />
 
-      <div className="container py-5">
-        <Pagination />
+      <div className="container mt-5">
+        <Pagination prev={info.prev} next={info.next}/>
           <Characters characters={characters} />
         <Pagination />
       </div>
