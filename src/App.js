@@ -20,6 +20,15 @@ function App() {
       .catch((error) => console.log(error))
   };
 
+  const onPrevious = () => {
+    fetchCharacters(info.prev);
+  }
+
+  const onNext = () => {
+    fetchCharacters(info.next);
+  }
+
+
   useEffect(() => {
     fetchCharacters(initialUrl);
   }, []);
@@ -29,9 +38,9 @@ function App() {
       <Navbar brand="Rick and Morty App" />
 
       <div className="container mt-5">
-        <Pagination prev={info.prev} next={info.next}/>
-          <Characters characters={characters} />
-        <Pagination />
+        <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
+        <Characters characters={characters} />
+        <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
       </div>
     </>
   );
